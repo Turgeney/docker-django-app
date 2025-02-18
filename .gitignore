@@ -1,0 +1,5 @@
+/.vscode/
+/venv/
+/.pytest_cache/
+/satoshi/__pycache__
+/core/__pycache__

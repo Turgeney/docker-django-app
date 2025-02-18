@@ -1,0 +1,34 @@
+stages:
+    - test
+    - build
+    - deploy
+
+tesing_minor:
+    stage: test
+    before_script:
+        - echo "minor pre-testing"
+    script:
+        - echo "minor testing"
+    after_script:
+        - echo "minor post-testing"
+
+tesing_major:
+    stage: test
+    before_script:
+        - echo "major pre-testing"
+    script:
+        - echo "major testing"
+    after_script:
+        - echo "major post-testing"
+
+building:
+    stage: build
+    script:
+        - echo "building"
+
+deploying:
+    stage: deploy
+    script:
+        - echo "deploying"
+    after_script:
+        - echo "all set"
